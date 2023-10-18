@@ -9,7 +9,7 @@ public class Zadanie1 {
 
         System.out.println("Fibonacci wersja 2");
 
-        boolean ok = SequenceTools.writeToFile(
+        boolean ok = SequenceTools.writeToFileFibonacci(
                 new FibonacciGenerator(), FROM, TO, FILE_NAME);
 
         if (ok) {
@@ -18,6 +18,9 @@ public class Zadanie1 {
         } else {
             System.out.println("Błąd");
         }
+        
+        Zadanie2.run();
+        
 
     }
 }
